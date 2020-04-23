@@ -1,0 +1,6 @@
+ {
+  "name": "hello_miai",
+  "country": "CN",
+  "render_readme": false,
+  "domains": ["tts"]
+}
