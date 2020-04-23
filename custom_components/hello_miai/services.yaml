@@ -1,0 +1,42 @@
+force_send:
+  description: 小爱音箱直接播放.{"message":"hello","miai_num":"0"}
+  fields:
+    miai_num:
+      description: 指定播放声音的音箱,从0开始(可选参数,默认为0).
+      example: '0'
+    message:
+      description: TTS播放的文本内容.
+      example: '你好天睿tera，我不是小爱。'
+set_vol:
+  description: 小爱音箱音量调节0-100.{"vol":50}
+  fields:
+    miai_num:
+      description: 指定调节音量的音箱,从0开始(可选参数,默认为0).
+      example: '0'
+    vol:
+      description: 指定音量.
+      example: '50'
+play:
+  description: 小爱音箱播放.
+  fields:
+    miai_num:
+      description: 指定播放的音箱,从0开始(可选参数,默认为0).
+      example: '0'
+pause:
+  description: 小爱音箱暂停.
+  fields:
+    miai_num:
+      description: 指定暂停的音箱,从0开始(可选参数,默认为0).
+      example: '0'
+add2msgqueue:
+  description: 小爱音箱队列播放.{"message":"hello","miai_num":"0","wait_time":"3"}
+  fields:
+    wait_time:
+      description: 指定该语句播报完毕之后的等待时间,单位为秒(可选参数，默认为0).
+      example: '0'
+    miai_num:
+      description: 指定播放声音的音箱,从0开始(可选参数,默认为0).
+      example: '0'
+    message:
+      description: TTS播放的文本内容.
+      example: '你好天睿tera，我不是小爱。'
