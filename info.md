@@ -1,8 +1,9 @@
 配置例子,填写绑定小爱音箱的用户账号信息：
-
+   
 hello_miai:
   miid: '13123456789'
   password: 'password'
+     
     
 更多教程：http://1t.click/avAU | 电报 群：http://1t.click/avAX | 
 电报频道：http://1t.click/avBs | Twitter ：http://1t.click/avBg | 
