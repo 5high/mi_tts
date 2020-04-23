@@ -1,0 +1,8 @@
+{
+    "domain": "hello_miai",
+    "name": "hello_miai",
+    "documentation": "https://www.example.com",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": []
+  }
