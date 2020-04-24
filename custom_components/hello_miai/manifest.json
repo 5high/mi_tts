@@ -1,7 +1,7 @@
 {
     "domain": "hello_miai",
-    "name": "hello_miai",
-    "documentation": "https://www.example.com",
+    "name": "小米网络tts",
+    "documentation": "https://github.com/5high/mi_tts",
     "dependencies": [],
     "codeowners": [],
     "requirements": []
