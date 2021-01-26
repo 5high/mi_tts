@@ -131,17 +131,17 @@ class xiaomi_tts:
             
 
 
-    def _get_sign(self): 
-        url = 'https://account.xiaomi.com/pass/serviceLogin?sid=micoapi'
+    def _get_sign(self):
+        url = 'https://account.xiaomi.com/pass/serviceLogin'
         pattern = re.compile(r'_sign":"(.*?)",')
         try:
-            r = self._request.get(url,headers=self._headers,timeout=3,verify=False)
-            self._cookies['pass_trace']=self._request.cookies.get_dict()['pass_trace']
-            self._sign=pattern.findall(r.text)[0]
+            r = self._request.get(url, headers=self._headers, timeout=3, verify=False)
+            self._cookies['pass_trace'] = self._request.cookies.get_dict().get('pass_trace')
+            self._sign = pattern.findall(r.text)[0]
             return True
         except BaseException as e:
-            _LOGGER.warning(e) 
-            return False 
+            _LOGGER.warning(e)
+            return False
 
 
     def _serviceLoginAuth2(self,captCode=None):
